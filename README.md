@@ -3,6 +3,15 @@ SimpleJSTokenizer
 
 Tokenizes Simplified JavaScript.
 
+* !== and === must be used in stead of != and ==
+* No quote escaping within strings.
+* Number can't start with a dot, but must start with a number (0.1, not .1).
+
+That is all intentional.
+
+Notice that this tokenizer, of course, doesn't know anything about that,
+the parser will throw an exception, when consuming this tokens.
+
 Example:
 
 ````javascript
