@@ -13,6 +13,12 @@ That is all intentional.
 Notice that this tokenizer, of course, doesn't know anything about that,
 the parser will throw an exception, when consuming this tokens.
 
+Tokenizer must be called from the command line via:
+
+````shell
+node tokenizer.js input_file.js
+````
+
 Example:
 
 ````javascript
