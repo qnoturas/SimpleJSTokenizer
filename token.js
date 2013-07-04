@@ -138,7 +138,7 @@ function tokenizer(source) {
         do {
             name += c;
             next();
-        } while (c.isLetter() && (i < source.length));
+        } while ((c.isLetter() || c.is('_')) && (i < source.length));
 
         pushToken('NAME', name);
     }
