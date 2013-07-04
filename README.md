@@ -4,6 +4,7 @@ SimpleJSTokenizer
 Tokenizes Simplified JavaScript.
 
 * !== and === must be used in stead of != and ==
+* No support for ++ and -- operators.
 * No quote escaping within strings.
 * Number can't start with a dot, but must start with a number (0.1, not .1).
 
