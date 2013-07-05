@@ -6,12 +6,13 @@ Tokenizes Simplified JavaScript.
 * !== and === must be used in stead of != and ==
 * No support for ++ and -- operators.
 * No quote escaping within strings.
+* Only single line comment: // Comment...
 * Number can't start with a dot, but must start with a number (0.1, not .1).
 
 That is all intentional.
 
-Notice that this tokenizer, of course, doesn't know anything about that,
-the parser will throw an exception, when consuming this tokens.
+Notice that the tokenizer, of course, doesn't know anything about the grammar.
+A parser consuming this tokens will throw an exception (not included).
 
 Tokenizer must be called from the command line via:
 
