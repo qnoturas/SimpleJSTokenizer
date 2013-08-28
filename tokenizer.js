@@ -205,10 +205,10 @@ module.exports.tokenizer = function (text) {
     function string(terminator) {
         var consumed = '';
         next();
-
-        while (!c.is(terminator)) {
+		var cont = true;
+        while (!c.is(terminator) && cont) {
             consumed += c;
-            next();
+            cont = next();
         }
         matched = true;
         makeToken('STRING', consumed);
