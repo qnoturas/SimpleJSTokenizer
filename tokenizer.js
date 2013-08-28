@@ -146,7 +146,7 @@ module.exports.tokenizer = function (text) {
 
         do {
             consumed += c;
-        } while (next() && (c.isLetter() || c.is('_') || c.is('$')));
+        } while (next() && (c.isLetter() || c.is('_') || c.is('$') || c.isNumber()));
 
         // The initial offset, substract for makeToken
         offset -= 1;
