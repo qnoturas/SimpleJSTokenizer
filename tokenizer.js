@@ -16,6 +16,7 @@ module.exports.tokenizer = function (text) {
     // Sorted by look ahead priority descending
         predefined = [
             {text: "===", type: 'OPERATOR'},
+            {text: "==", type: 'OPERATOR'},
             {text: "!==", type: 'OPERATOR'},
             {text: ">>>", type: 'OPERATOR'},
 
@@ -53,6 +54,7 @@ module.exports.tokenizer = function (text) {
             {text: "%", type: 'OPERATOR'},
             {text: "~", type: 'OPERATOR'},
             {text: ".", type: 'OPERATOR'},
+			{text: " ", type: 'SPACE'},
 
             {text: ",", type: 'COMMA'}
         ];
